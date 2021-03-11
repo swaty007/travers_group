@@ -1,0 +1,39 @@
+/*
+ Theme Name: Coin
+ Author: Alex Lialiushko
+ Version: 1.0
+*/
+
+@import "libs";
+
+/* Utils */
+@import "utils/fonts";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/grid";
+
+
+/* Base */
+@import "base/base";
+@import "base/globals";
+
+/* Icludes */
+//@import "includes/footer";
+//@import "includes/navbar";
+//@import "includes/dashboard";
+//@import "includes/sidebar";
+
+/* Components */
+@import "components/main";
+@import "components/about";
+@import "components/reviews";
+@import "components/certificate";
+@import "components/advantages";
+@import "components/map";
+@import "components/contact";
+
+/* Sections */
+//@import "sections/auth";
+
+
+

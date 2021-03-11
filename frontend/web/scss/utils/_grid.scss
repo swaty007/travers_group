@@ -1,0 +1,61 @@
+$xl-widthMin: 1200px;
+$lg-widthMin: 992px;
+$md-widthMin: 768px;
+$sm-widthMin: 576px;
+
+$xl-width: 1199.98px;
+$lg-width: 991.98px;
+$md-width: 767.98px;
+$sm-width: 575.98px;
+
+@mixin adaptiveMax($size) {
+  @if $size == xl {
+    @media (max-width: $xl-width) {
+      @content
+    }
+  } @else if $size == lg {
+    @media (max-width: $lg-width) {
+      @content
+    }
+  } @else if $size == md {
+    @media only screen and (max-width: $md-width) {
+      @content
+    }
+  }  @else if $size == sm {
+    @media only screen and (max-width: $sm-width) {
+      @content
+    }
+  }
+}
+@mixin adaptiveMin($size) {
+  @if $size == xl {
+    @media (min-width: $xl-widthMin) {
+      @content
+    }
+  } @else if $size == lg {
+    @media (min-width: $lg-widthMin) {
+      @content
+    }
+  } @else if $size == md {
+    @media only screen and (min-width: $md-widthMin) {
+      @content
+    }
+  }  @else if $size == sm {
+    @media only screen and (min-width: $sm-widthMin) {
+      @content
+    }
+  }
+}
+
+
+@include adaptiveMin(lg) {
+
+}
+
+@include adaptiveMin(md) {
+
+}
+
+@include adaptiveMin(sm) {
+
+}
