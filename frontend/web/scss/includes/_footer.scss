@@ -5,7 +5,8 @@
     font-size: 12px;
     line-height: 37px;
     color: $brand-white;
-    &.active {
+    transition: 0.3s all;
+    &.active, &:hover {
       color: $brand-green;
     }
   }
