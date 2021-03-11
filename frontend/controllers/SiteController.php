@@ -1,10 +1,7 @@
 <?php
 namespace frontend\controllers;
 
-use common\models\Balances;
-use common\models\Log;
 use common\models\Telegram;
-use common\models\Twilio;
 use common\models\User;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
@@ -25,7 +22,7 @@ use frontend\models\ContactForm;
 /**
  * Site controller
  */
-class SiteController extends BaseSpyController
+class SiteController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -72,28 +69,6 @@ class SiteController extends BaseSpyController
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
-    }
-
-    public function actionTest() {
-//        die();
-//        Twilio::sendSms("+380638316055",
-//            "Леша краб");
-        die();
-//       try {
-           $ch = curl_init();
-           curl_setopt($ch, CURLOPT_URL, 'https://api.blockchain.info/stats/312');
-           curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-           $dataBTC = curl_exec($ch);
-           if (curl_errno($ch) || curl_getinfo($ch, CURLINFO_HTTP_CODE)) {
-//               throw new ErrorException(curl_error($ch). '+'. curl_getinfo($ch, CURLINFO_HTTP_CODE));
-               throw new Exception(curl_error($ch). '+'. curl_getinfo($ch, CURLINFO_HTTP_CODE));
-           }
-           curl_close($ch);
-//       } catch (Exception $e) {
-           var_dump(__FUNCTION__, __FILE__);
-           var_dump($e->getMessage());
-//           Log::createErrorLog($e->getMessage());
-//       }
     }
 
     public function actionError()

@@ -1,0 +1,11 @@
+.about {
+  &__title {
+    font-weight: $medium;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 3px solid $brand-green;
+    display: inline-block;
+    padding-right: 30px;
+    padding-bottom: 5px;
+  }
+}
