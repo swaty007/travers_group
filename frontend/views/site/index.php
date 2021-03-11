@@ -73,7 +73,7 @@ $this->title = 'Travers Group';
             </div>
             <div class="col-lg-6 order-1">
                 <h3 class="about__title mb-4">
-                    <?= Yii::t('frontend', 'История компании'); ?>
+                    <?= Yii::t('frontend', 'Ценности компании'); ?>
                 </h3>
                 <p class="text">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
@@ -86,7 +86,7 @@ $this->title = 'Travers Group';
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
                 <h3 class="about__title mb-4">
-                    <?= Yii::t('frontend', 'История компании'); ?>
+                    <?= Yii::t('frontend', 'Структура холдинга'); ?>
                 </h3>
                 <p class="text">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
