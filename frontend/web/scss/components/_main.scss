@@ -1,11 +1,29 @@
 .main {
   background: $brand-black;
+  padding-bottom: 60px;
+  padding-top: 100px;
   &__title {
     font-size: 52px;
     line-height: 63px;
   }
+  &__strong {
+    font-weight: $bold;
+    font-size: 52px;
+    line-height: 63px;
+    &-small {
+      font-weight: $bold;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
   &__block {
     padding: 36px;
     border: 3px solid $brand-green;
+  }
+}
+
+@include adaptiveMax(lg) {
+  .main {
+    padding-top: 160px;
   }
 }

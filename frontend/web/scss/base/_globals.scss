@@ -8,4 +8,23 @@
 .text {
   font-size: 18px;
   line-height: 22px;
+  &__green {
+    color: $brand-green;
+  }
+}
+.main-btn {
+  background: $brand-green;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: none;
+  color: $white;
+  line-height: 38px;
+  padding: 0 10px;
+  display: inline-block;
+  transition: 0.3s all;
+  border: none;
+  &:hover {
+    color: $brand-white;
+    opacity: 0.8;
+  }
 }

@@ -16,7 +16,7 @@ return [
     'help' => null,
     'sourcePath' => dirname(dirname(__DIR__)),
     'messagePath' => '@common/messages',
-    'languages' => ['ru'],
+    'languages' => ['ru', 'en-US'],
     'translator' => 'Yii::t',
     'sort' => false,
     'overwrite' => true,

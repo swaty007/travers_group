@@ -15,7 +15,7 @@ return [
                 'backend' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@common/messages',
-                    'sourceLanguage' => 'en-US',
+                    'sourceLanguage' => 'ru-RU',
                     'fileMap' => [
                         'backend' => 'backend.php'
                     ],
@@ -23,7 +23,7 @@ return [
                 'frontend' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@common/messages',
-                    'sourceLanguage' => 'en-US',
+                    'sourceLanguage' => 'ru-RU',
                     'fileMap' => [
                         'frontend' => 'frontend.php'
                     ],
@@ -31,6 +31,6 @@ return [
             ],
         ],
     ],
-    'sourceLanguage' => 'en-US',
-    'language' => 'en-US',
+    'sourceLanguage' => 'ru-RU',
+    'language' => 'ru-RU',
 ];

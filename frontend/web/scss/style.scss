@@ -7,6 +7,7 @@
 @import "libs";
 
 /* Utils */
+
 @import "utils/fonts";
 @import "utils/variables";
 @import "utils/mixins";
@@ -18,8 +19,8 @@
 @import "base/globals";
 
 /* Icludes */
-//@import "includes/footer";
-//@import "includes/navbar";
+@import "includes/footer";
+@import "includes/navbar";
 //@import "includes/dashboard";
 //@import "includes/sidebar";
 

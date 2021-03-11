@@ -17,7 +17,7 @@ return [
             'baseUrl' => '',
             'enableCookieValidation' => true,
             'enableCsrfValidation' => true,
-//            'cookieValidationKey' => '45ed697dtg8uhrg9eheg00j09',
+//            'cookieValidationKey' => '45ed697hfqsuhrg9eheg00j09',
         ],
         'user' => [
             'identityClass' => 'common\models\User',

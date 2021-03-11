@@ -90,9 +90,9 @@ class SiteController extends Controller
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::$app->session->setFlash('success', Yii::t('frontend','Благодарим Вас за обращение к нам. Мы ответим вам как можно скорее.'));
             } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+                Yii::$app->session->setFlash('error', Yii::t('frontend','При отправке вашего сообщения произошла ошибка.'));
             }
             return $this->refresh();
         } else {
@@ -119,18 +119,12 @@ class SiteController extends Controller
         } else {
             $model->password = '';
 
-            return $this->render('login', [
-                'model' => $model,
-            ]);
+//            return $this->render('login', [
+//                'model' => $model,
+//            ]);
         }
     }
 
-    public function actionTelegram2fa () {
-        if (Yii::$app->request->isAjax) {
-            Yii::$app->response->format = 'json';
-            $telegram = new Telegram();
-        }
-    }
 
     /**
      * Logs out the current user.
@@ -151,20 +145,20 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
-            }
-
-            return $this->refresh();
-        } else {
-            return $this->render('contact', [
-                'model' => $model,
-            ]);
-        }
+//        $model = new ContactForm();
+//        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+//            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+//                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+//            } else {
+//                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+//            }
+//
+//            return $this->refresh();
+//        } else {
+//            return $this->render('contact', [
+//                'model' => $model,
+//            ]);
+//        }
     }
 
     /**
@@ -174,7 +168,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+//        return $this->render('about');
     }
 
     /**
@@ -190,9 +184,9 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-        return $this->render('signup', [
-            'model' => $model,
-        ]);
+//        return $this->render('signup', [
+//            'model' => $model,
+//        ]);
     }
 
     /**
@@ -213,9 +207,9 @@ class SiteController extends Controller
             }
         }
 
-        return $this->render('requestPasswordResetToken', [
-            'model' => $model,
-        ]);
+//        return $this->render('requestPasswordResetToken', [
+//            'model' => $model,
+//        ]);
     }
 
     /**
@@ -239,9 +233,9 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-        return $this->render('resetPassword', [
-            'model' => $model,
-        ]);
+//        return $this->render('resetPassword', [
+//            'model' => $model,
+//        ]);
     }
 
     /**
@@ -286,8 +280,8 @@ class SiteController extends Controller
             Yii::$app->session->setFlash('error', 'Sorry, we are unable to resend verification email for the provided email address.');
         }
 
-        return $this->render('resendVerificationEmail', [
-            'model' => $model
-        ]);
+//        return $this->render('resendVerificationEmail', [
+//            'model' => $model
+//        ]);
     }
 }

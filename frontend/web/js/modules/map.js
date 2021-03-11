@@ -1,3 +1,5 @@
+import Main from "./main";
+
 class Map {
     constructor() {
         this.init()
@@ -34,152 +36,152 @@ class Map {
             let ukraineData = [
                 {
                     id: "kiev",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01a964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 316,
                 },
                 {
                     id: "vinnitsa",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 17,
                 },
                 {
                     id: "volyn",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 1,
                 },
                 {
                     id: "dnepropetrovsk",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01a964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 9,
                 },
                 {
                     id: "donetsk",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01a964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 6,
                 },
                 {
                     id: "zhytomyr",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 11,
                 },
                 {
                     id: "transcarpathian",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 4,
                 },
                 {
                     id: "zaporizhzhya",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 10,
                 },
                 {
                     id: "ivanoFrankivsk",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 11,
                 },
                 {
                     id: "kirovograd",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 5,
                 },
                 {
                     id: "lugansk",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 5,
                 },
                 {
                     id: "lviv",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 13,
                 },
                 {
                     id: "nikolaev",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 7,
                 },
                 {
                     id: "odessa",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 33,
                 },
                 {
                     id: "poltava",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 12,
                 },
                 {
                     id: "rivne",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 17,
                 },
                 {
                     id: "sumy",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 11,
                 },
                 {
                     id: "ternopol",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 7,
                 },
                 {
                     id: "kharkov",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 5,
                 },
                 {
                     id: "kherson",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 5,
                 },
                 {
                     id: "khmelnitsky",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 12,
                 },
                 {
                     id: "cherkasy",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 15,
                 },
                 {
                     id: "chernivtsi",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 4,
                 },
                 {
                     id: "chernihiv",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01A964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 8,
                 },
                 {
                     id: "krimNash",
-                    stableColor: "#7cccaa",
-                    hoverColor: "#01a964",
+                    stableColor: "#343332",
+                    hoverColor: "#008749",
                     patient: 1,
                 },
             ];
@@ -188,7 +190,7 @@ class Map {
                 $(id).attr('data-toggle', 'tooltip');
                 $(id).attr('data-placement', 'top');
                 $(id).attr('fill', item.stableColor);
-                $(id).attr('title', ukraineRegions[item.id] + ' область, пациентов ' + item.patient);
+                $(id).attr('title', ukraineRegions[item.id] + ' область'); // , пациентов ' + item.patient
                 $(id).hover(function (e) {
                     $(this).attr('fill', item.hoverColor)
                 }, function (e) {
@@ -198,3 +200,5 @@ class Map {
             $('[data-toggle="tooltip"]').tooltip()
     }
 }
+
+export default Map

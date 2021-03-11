@@ -1,0 +1,12 @@
+.footer {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  .nav-link {
+    font-size: 12px;
+    line-height: 37px;
+    color: $brand-white;
+    &.active {
+      color: $brand-green;
+    }
+  }
+}

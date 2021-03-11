@@ -1,3 +1,15 @@
 .contact {
   background: $brand-black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__block {
+    padding: 36px;
+    border: 3px solid $brand-green;
+  }
+  &__icon {
+    transition: 0.4s all;
+    &:hover {
+      filter: brightness(2);
+    }
+  }
 }
