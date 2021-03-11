@@ -17,4 +17,7 @@ body {
   #bingc-passive div.bingc-passive-overlay a.bingc-passive-close-button svg polygon {
     fill: $brand-green!important;
   }
+  #bingc-passive div.bingc-passive-overlay a.bingc-powered-by {
+    display: none!important;
+  }
 }
