@@ -1,0 +1,20 @@
+body {
+  #bingc-phone-button svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside {
+    fill: $brand-green!important;
+  }
+  #bingc-phone-button:hover svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside {
+    fill: $brand-green!important;
+  }
+  #bingc-phone-button div.bingc-phone-button-tooltip svg.bingc-phone-button-arrow polyline {
+    fill: $brand-green!important;
+  }
+  #bingc-phone-button div.bingc-phone-button-tooltip.bingc-phone-button-tooltip-bottom-left {
+    background: $brand-green!important;
+  }
+  #bingc-passive div.bingc-passive-overlay {
+    background: $brand-green!important;
+  }
+  #bingc-passive div.bingc-passive-overlay a.bingc-passive-close-button svg polygon {
+    fill: $brand-green!important;
+  }
+}
