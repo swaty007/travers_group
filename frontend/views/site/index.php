@@ -67,11 +67,24 @@ $this->title = 'Travers Group';
                 </p>
             </div>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center mb-5">
             <div class="col-lg-6 order-2 text-center mt-4 mt-lg-0">
                 <?= Html::img('@web/img/main_img.png', ['alt' => 'Main Img']) ?>
             </div>
             <div class="col-lg-6 order-1">
+                <h3 class="about__title mb-4">
+                    <?= Yii::t('frontend', 'История компании'); ?>
+                </h3>
+                <p class="text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center order-lg-1 order-2 mt-4 mt-lg-0">
+                <?= Html::img('@web/img/main_img.png', ['alt' => 'Main Img']) ?>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
                 <h3 class="about__title mb-4">
                     <?= Yii::t('frontend', 'История компании'); ?>
                 </h3>
